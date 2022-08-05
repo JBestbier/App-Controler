@@ -4,17 +4,17 @@ const fs = require('fs')
 
 
 //get data of file and assign const
-const content = JSON.parse('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json')
+const content = 'https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json'
 
 
 //get a list of apps
-router.get('', function(req, res){
+router.get('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json', function(req, res){
     res.send(content);
 })
 
 
 //create an item list of apps
-router.post('', function(req, res){
+router.post('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json', function(req, res){
     
     const id = content.length + 1;
 
@@ -29,7 +29,7 @@ router.post('', function(req, res){
 
 
 //update a list item with specific id of apps
-router.put('/:id', function(req, res){
+router.put('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/:id', function(req, res){
     const id = Number(req.params.id)
 
     const newEntry = Object.assign({
@@ -49,7 +49,7 @@ router.put('/:id', function(req, res){
 
 
 // delete a list item with specific id of apps
-router.delete('/:id', function(req, res){
+router.delete('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/:id', function(req, res){
     const id = Number(req.params.id)
 
     for (let i = 0; i < content.length; i++) {
