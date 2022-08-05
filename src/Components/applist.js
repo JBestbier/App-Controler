@@ -24,7 +24,7 @@ class Appslist extends React.Component {
 
     // validation to check if page has loaded and load contents of JSON file
     componentDidMount() {
-        fetch("public/webApi.json")
+        fetch("https://github.com/JBestbier/App-Controler/blob/b4bd3d1ae275202df3c2be9c46be42dd42b840e7/public/webApi.json")
             .then(res => res.json())
             .then(
                 (result) => {
