@@ -4,7 +4,7 @@ const fs = require('fs')
 
 
 //get data of file and assign const
-const content = JSON.parse(fs.readFileSync('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json'))
+const content = JSON.parse('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json')
 
 
 //get a list of apps
