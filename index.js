@@ -13,7 +13,7 @@ app.use(express.static('./public'));
 app.use(cors());
 app.use(morgan());
 app.use(bodyParser.json());
-app.use('/apps', appsRouter);
+app.use('', appsRouter);
 
 
 // // Port listen
