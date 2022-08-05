@@ -24,7 +24,7 @@ class Appslist extends React.Component {
 
     // validation to check if page has loaded and load contents of JSON file
     componentDidMount() {
-        fetch("http://localhost:3000/apps")
+        fetch("public/webApi.json")
             .then(res => res.json())
             .then(
                 (result) => {
