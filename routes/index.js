@@ -8,13 +8,13 @@ const content = 'https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/web
 
 
 //get a list of apps
-router.get('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json', function(req, res){
+router.get('', function(req, res){
     res.send(content);
 })
 
 
 //create an item list of apps
-router.post('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json', function(req, res){
+router.post('', function(req, res){
     
     const id = content.length + 1;
 
@@ -29,7 +29,7 @@ router.post('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.
 
 
 //update a list item with specific id of apps
-router.put('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/:id', function(req, res){
+router.put('/:id', function(req, res){
     const id = Number(req.params.id)
 
     const newEntry = Object.assign({
@@ -49,7 +49,7 @@ router.put('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.j
 
 
 // delete a list item with specific id of apps
-router.delete('https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/:id', function(req, res){
+router.delete('/:id', function(req, res){
     const id = Number(req.params.id)
 
     for (let i = 0; i < content.length; i++) {
