@@ -16,6 +16,6 @@ app.use(bodyParser.json());
 app.use('/apps', appsRouter);
 
 
-// Port listen
-const PORT = 8080;
-app.listen(PORT, () => console.log('Listening on: ' + PORT));
+// // Port listen
+// const PORT = 8080;
+// app.listen(PORT, () => console.log('Listening on: ' + PORT));
