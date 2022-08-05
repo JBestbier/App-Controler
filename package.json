@@ -49,5 +49,8 @@
   "proxy": "http://localhost:8080",
   "devDependencies": {
     "nodemon": "^2.0.19"
+  },
+  "engines": {
+  "node": "v16.15.0"
   }
 }
