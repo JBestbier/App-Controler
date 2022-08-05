@@ -51,7 +51,7 @@ class Appslist extends React.Component {
 
         console.log(id)
 
-        axios.put(`http://localhost:3000/apps/${id}`, this.state)
+        axios.put(`https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/${id}`, this.state)
             .then(response => {
                 console.log(response)
             })
@@ -73,7 +73,7 @@ class Appslist extends React.Component {
     handleDelete = (e) => {
         var id = e.target.parentNode.parentNode.id
 
-        axios.delete(`http://localhost:3000/apps/${id}`)
+        axios.delete(`https://gitcdn.link/cdn/JBestbier/App-Controler/main/public/webApi.json/${id}`)
         .then(response => {
             console.log(response)
         })
