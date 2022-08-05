@@ -1,0 +1,64 @@
+/* CSS styling for APP.JS */
+
+
+/* style for all elements */
+* {
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+
+/* style for app class */
+.App{
+  margin-top: .20rem;
+}
+
+
+/* style for buttons */
+button{
+  font-size: large;
+  padding: 0.3em;
+  border: 1px solid white;
+}
+
+
+/* style for hovering over a button */
+button:hover{
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+
+/* style for tables */
+table{
+  border: 3px white solid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+
+/* style for form class */
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+
+/* style for forminsert class */
+.formInsert {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+
+/* style for input fields */
+input {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
