@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const appsRouter = require('./router/index.js');
+const appsRouter = require('https://gitcdn.link/cdn/JBestbier/App-Controler/main/routes/index.js');
 
 // Init Express
 const app = express();
